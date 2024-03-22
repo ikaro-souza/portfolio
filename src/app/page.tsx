@@ -1,37 +1,72 @@
-import Link from "next/link";
+import {
+    IconBrandGithub,
+    IconBrandLinkedin,
+    IconBrandWhatsapp,
+    IconMail,
+} from "@tabler/icons-react";
+import Image from "next/image";
+import { Section, SectionTitle } from "~/components/section";
+import { SocialItem } from "~/components/social-item";
 
-export default function HomePage() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-        </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
-            <div className="text-lg">
-              Just the basics - Everything you need to know to set up your
-              database and authentication.
-            </div>
-          </Link>
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
-            <div className="text-lg">
-              Learn more about Create T3 App, the libraries it uses, and how to
-              deploy it.
-            </div>
-          </Link>
-        </div>
-      </div>
-    </main>
-  );
+export default function Page() {
+    return (
+        <main className="flex flex-col gap-14 p-4">
+            <header className="flex flex-col gap-6 text-center">
+                <h1 className="font-display text-3xl font-bold tracking-wide">
+                    Opa, tudo bom?
+                    <br />
+                    Eu sou o Ikaro.
+                </h1>
+                <section className="flex flex-col items-center gap-3">
+                    <div className="flex h-36 w-36 items-end justify-center overflow-clip rounded-full bg-white dark:bg-neutral-800">
+                        <Image
+                            src="/avatar.png"
+                            alt="Ikaro Souza"
+                            height={120}
+                            width={118.03}
+                            className="object-contain object-center"
+                        />
+                    </div>
+                    <h2 className="text-xl font-bold leading-6 tracking-wide">
+                        Engenheiro Full Stack
+                    </h2>
+                    <p className="text-neutral-800 dark:text-neutral-200">
+                        Há 4 anos apaixonado por desenvolver produtos incríveis
+                        na web.
+                    </p>
+                    <div className="grid grid-cols-2 grid-rows-2 justify-center gap-5">
+                        <SocialItem
+                            Icon={(props) => (
+                                <IconBrandLinkedin {...(props as any)} />
+                            )}
+                            label="LinkedIn"
+                            url="https://www.linkedin.com/in/ikaro-souza-b5a375174"
+                        />
+                        <SocialItem
+                            Icon={(props) => (
+                                <IconBrandGithub {...(props as any)} />
+                            )}
+                            label="GitHub"
+                            url="https://github.com/ikaro-souza/"
+                        />
+                        <SocialItem
+                            Icon={(props) => (
+                                <IconBrandWhatsapp {...(props as any)} />
+                            )}
+                            label="WhatsApp"
+                            url="https://wa.me/5588992908073?text=Eae%20mofi"
+                        />
+                        <SocialItem
+                            Icon={(props) => <IconMail {...(props as any)} />}
+                            label="Email"
+                            url="mailto:ikaro.lisarb@gmail.com?subject=Meu%20Deus%20como%20a%20web%20%C3%A9%20divertida&body=Quando%20eu%20vi%20o%20app%20de%20e-mail%20abrir%20com%20um%20subject%20e%20body%20preenchidos%20eu%20tive%20a%20mesma%20sensa%C3%A7%C3%A3o%20de%20quando%20vi%20meu%20primeiro%20Hello%20World%20em%20HTML%20sendo%20renderizado."
+                        />
+                    </div>
+                </section>
+            </header>
+            <Section>
+                <SectionTitle>Experiências profissionais</SectionTitle>
+            </Section>
+        </main>
+    );
 }
