@@ -9,6 +9,7 @@ type SectionCardProps = HTMLProps<HTMLDivElement> & {
 type SectionCardImageProps = {
     src: string | StaticImageData;
     alt: string;
+    className?: string;
 };
 type SectionCardBodyProps = HTMLProps<HTMLDivElement>;
 type SectionCardTitleProps = HTMLProps<HTMLHeadingElement>;
@@ -37,12 +38,19 @@ export function SectionCard({
     );
 }
 
-export function SectionCardImage({ alt, src }: SectionCardImageProps) {
+export function SectionCardImage({
+    alt,
+    src,
+    className,
+}: SectionCardImageProps) {
     return (
         <div className="p-2">
             <Image
                 alt={alt}
-                className="aspect-square rounded-xl bg-neutral-100 object-contain object-center shadow dark:bg-neutral-900"
+                className={twMerge(
+                    "aspect-square rounded-xl bg-neutral-100 object-contain object-center shadow dark:bg-neutral-900",
+                    className,
+                )}
                 height={84}
                 src={src}
                 width={84}

@@ -78,8 +78,8 @@ export default function Page() {
                 <SectionTitle>Experiências profissionais</SectionTitle>
                 <SectionCard>
                     <SectionCardImage
-                        src="/logos/solar-logo.jpg"
                         alt="Solar Coca-Cola"
+                        src="/logos/solar-logo.jpg"
                     />
                     <SectionCardBody>
                         <SectionCardTitle>
@@ -96,8 +96,8 @@ export default function Page() {
                 </SectionCard>
                 <SectionCard>
                     <SectionCardImage
-                        src="/logos/kuantokusta-logo.png"
                         alt="KuantoKusta"
+                        src="/logos/kuantokusta-logo.png"
                     />
                     <SectionCardBody>
                         <SectionCardTitle>
@@ -114,8 +114,9 @@ export default function Page() {
                 </SectionCard>
                 <SectionCard>
                     <SectionCardImage
-                        src="/logos/nutcache-logo.png"
+                        className="bg-cyan-100 dark:bg-cyan-700"
                         alt="Nutcache"
+                        src="/logos/nutcache-logo.png"
                     />
                     <SectionCardBody>
                         <SectionCardTitle>
@@ -132,8 +133,8 @@ export default function Page() {
                 </SectionCard>
                 <SectionCard>
                     <SectionCardImage
-                        src="/logos/fitbank-logo.webp"
                         alt="FitBank"
+                        src="/logos/fitbank-logo.webp"
                     />
                     <SectionCardBody>
                         <SectionCardTitle>Tech Lead</SectionCardTitle>
@@ -148,8 +149,8 @@ export default function Page() {
                 </SectionCard>
                 <SectionCard>
                     <SectionCardImage
-                        src="/logos/fitbank-logo.webp"
                         alt="FitBank"
+                        src="/logos/fitbank-logo.webp"
                     />
                     <SectionCardBody>
                         <SectionCardTitle>
@@ -166,8 +167,8 @@ export default function Page() {
                 </SectionCard>
                 <SectionCard>
                     <SectionCardImage
-                        src="/logos/fitbank-logo.webp"
                         alt="FitBank"
+                        src="/logos/fitbank-logo.webp"
                     />
                     <SectionCardBody>
                         <SectionCardTitle>Estagiário</SectionCardTitle>
@@ -204,6 +205,7 @@ export default function Page() {
                 <SectionCard>
                     <SectionCardImage
                         alt="IFCE Fortaleza"
+                        className="bg-emerald-100 dark:bg-emerald-700"
                         src="/logos/ifce-logo.png"
                     />
                     <SectionCardBody>
