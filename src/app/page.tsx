@@ -20,7 +20,7 @@ import { SocialItem } from "~/components/social-item";
 
 export default function Page() {
     return (
-        <main className="flex flex-col gap-14 p-4">
+        <main className="flex flex-col gap-14 p-4 pb-8">
             <header className="flex flex-col gap-6 text-center">
                 <h1 className="font-display text-3xl font-bold tracking-wide">
                     Opa, tudo bom?
