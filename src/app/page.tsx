@@ -7,6 +7,15 @@ import {
 } from "@tabler/icons-react";
 import Image from "next/image";
 import { Section, SectionTitle } from "~/components/section";
+import {
+    SectionCard,
+    SectionCardBody,
+    SectionCardDateRange,
+    SectionCardFooter,
+    SectionCardImage,
+    SectionCardText,
+    SectionCardTitle,
+} from "~/components/section-card";
 import { SocialItem } from "~/components/social-item";
 
 export default function Page() {
@@ -67,6 +76,110 @@ export default function Page() {
             </header>
             <Section>
                 <SectionTitle>Experiências profissionais</SectionTitle>
+                <SectionCard>
+                    <SectionCardImage
+                        src="/logos/solar-logo.jpg"
+                        alt="Solar Coca-Cola"
+                    />
+                    <SectionCardBody>
+                        <SectionCardTitle>
+                            Analista de Sistemas Sênior
+                        </SectionCardTitle>
+                        <SectionCardText>Solar Coca-Cola</SectionCardText>
+                        <SectionCardFooter>
+                            <SectionCardDateRange
+                                startDate={new Date(2023, 11)}
+                                endDate={new Date(2024, 1)}
+                            />
+                        </SectionCardFooter>
+                    </SectionCardBody>
+                </SectionCard>
+                <SectionCard>
+                    <SectionCardImage
+                        src="/logos/kuantokusta-logo.png"
+                        alt="KuantoKusta"
+                    />
+                    <SectionCardBody>
+                        <SectionCardTitle>
+                            Desenvolvedor Front-end
+                        </SectionCardTitle>
+                        <SectionCardText>KuantoKusta</SectionCardText>
+                        <SectionCardFooter>
+                            <SectionCardDateRange
+                                startDate={new Date(2023, 3)}
+                                endDate={new Date(2023, 10)}
+                            />
+                        </SectionCardFooter>
+                    </SectionCardBody>
+                </SectionCard>
+                <SectionCard>
+                    <SectionCardImage
+                        src="/logos/nutcache-logo.png"
+                        alt="Nutcache"
+                    />
+                    <SectionCardBody>
+                        <SectionCardTitle>
+                            Desenvolvedor Front-end
+                        </SectionCardTitle>
+                        <SectionCardText>Nutcache</SectionCardText>
+                        <SectionCardFooter>
+                            <SectionCardDateRange
+                                startDate={new Date(2022, 5)}
+                                endDate={new Date(2023, 2)}
+                            />
+                        </SectionCardFooter>
+                    </SectionCardBody>
+                </SectionCard>
+                <SectionCard>
+                    <SectionCardImage
+                        src="/logos/fitbank-logo.webp"
+                        alt="FitBank"
+                    />
+                    <SectionCardBody>
+                        <SectionCardTitle>Tech Lead</SectionCardTitle>
+                        <SectionCardText>FitBank</SectionCardText>
+                        <SectionCardFooter>
+                            <SectionCardDateRange
+                                startDate={new Date(2021, 5)}
+                                endDate={new Date(2022, 5)}
+                            />
+                        </SectionCardFooter>
+                    </SectionCardBody>
+                </SectionCard>
+                <SectionCard>
+                    <SectionCardImage
+                        src="/logos/fitbank-logo.webp"
+                        alt="FitBank"
+                    />
+                    <SectionCardBody>
+                        <SectionCardTitle>
+                            Desenvolvedor Fullstack
+                        </SectionCardTitle>
+                        <SectionCardText>FitBank</SectionCardText>
+                        <SectionCardFooter>
+                            <SectionCardDateRange
+                                startDate={new Date(2020, 4)}
+                                endDate={new Date(2021, 5)}
+                            />
+                        </SectionCardFooter>
+                    </SectionCardBody>
+                </SectionCard>
+                <SectionCard>
+                    <SectionCardImage
+                        src="/logos/fitbank-logo.webp"
+                        alt="FitBank"
+                    />
+                    <SectionCardBody>
+                        <SectionCardTitle>Estagiário</SectionCardTitle>
+                        <SectionCardText>FitBank</SectionCardText>
+                        <SectionCardFooter>
+                            <SectionCardDateRange
+                                startDate={new Date(2019, 11)}
+                                endDate={new Date(2020, 3)}
+                            />
+                        </SectionCardFooter>
+                    </SectionCardBody>
+                </SectionCard>
             </Section>
         </main>
     );
