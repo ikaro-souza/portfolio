@@ -35,6 +35,7 @@ export default function Page() {
                             height={120}
                             width={118.03}
                             className="object-contain object-center"
+                            priority
                         />
                     </div>
                     <h2 className="text-xl font-bold leading-6 tracking-wide">
