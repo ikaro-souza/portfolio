@@ -20,7 +20,7 @@ import { SocialItem } from "~/components/social-item";
 
 export default function Page() {
     return (
-        <main className="flex flex-col gap-14 p-4 pb-8">
+        <main className="flex flex-col gap-14 p-4 pb-14">
             <header className="flex flex-col gap-6 text-center">
                 <h1 className="font-display text-3xl font-bold tracking-wide">
                     Opa, tudo bom?
@@ -176,6 +176,45 @@ export default function Page() {
                             <SectionCardDateRange
                                 startDate={new Date(2019, 11)}
                                 endDate={new Date(2020, 3)}
+                            />
+                        </SectionCardFooter>
+                    </SectionCardBody>
+                </SectionCard>
+            </Section>
+            <Section>
+                <SectionTitle>Educação</SectionTitle>
+                <SectionCard>
+                    <SectionCardImage
+                        alt="Estácio FIC"
+                        src="/logos/estacio-logo.png"
+                    />
+                    <SectionCardBody>
+                        <SectionCardTitle>
+                            Análise e Desenvolvimeno de Sistemas
+                        </SectionCardTitle>
+                        <SectionCardText>Estácio FIC</SectionCardText>
+                        <SectionCardFooter>
+                            <SectionCardDateRange
+                                startDate={new Date(2019, 6)}
+                                endDate={new Date(2022, 11)}
+                            />
+                        </SectionCardFooter>
+                    </SectionCardBody>
+                </SectionCard>
+                <SectionCard>
+                    <SectionCardImage
+                        alt="IFCE Fortaleza"
+                        src="/logos/ifce-logo.png"
+                    />
+                    <SectionCardBody>
+                        <SectionCardTitle>
+                            Técnico em Informática
+                        </SectionCardTitle>
+                        <SectionCardText>IFCE Fortaleza</SectionCardText>
+                        <SectionCardFooter>
+                            <SectionCardDateRange
+                                startDate={new Date(2019, 6)}
+                                endDate={new Date(2022, 11)}
                             />
                         </SectionCardFooter>
                     </SectionCardBody>

@@ -42,7 +42,7 @@ export function SectionCardImage({ alt, src }: SectionCardImageProps) {
         <div className="p-2">
             <Image
                 alt={alt}
-                className="rounded-xl bg-neutral-100 object-cover object-center shadow dark:bg-neutral-900"
+                className="aspect-square rounded-xl bg-neutral-100 object-contain object-center shadow dark:bg-neutral-900"
                 height={84}
                 src={src}
                 width={84}
